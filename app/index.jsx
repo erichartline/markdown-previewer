@@ -1,10 +1,27 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-require('jquery');
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import './styles/app.scss';
 
-// Load foundation
-$(document).foundation();
+class Markdown extends React.Component {
+  render() {
+    return (
+      <MuiThemeProvider>
+        <Grid fluid>
+        <Row>
+          <Col xs={6} md={3} lg={2}>
+            Hello, world!
+          </Col>
+          <Col xs={6} md={3} lg={2}>
+            Hello, world!
+          </Col>
+        </Row>
+      </Grid>
+      </MuiThemeProvider>
+    )
+  }
+}
 
-ReactDOM.render(<p>React boilerplate</p>, document.getElementById('app'));
+ReactDOM.render(<Markdown />, document.getElementById('app'));

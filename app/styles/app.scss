@@ -1,8 +1,6 @@
 @import "base/variables";
 
-//Foundation
-@import "base/foundation-settings";
-@import "foundation";
-@include foundation-everything;
-
 // Components
+body {
+  font-family: 'Roboto', sans-serif;
+}
