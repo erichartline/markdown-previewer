@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
+    "marked": "^0.3.6",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-foundation": "^0.8.2",
