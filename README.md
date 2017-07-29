@@ -1,3 +1,3 @@
-# React Boilerplate
+# React Markdown Previewer
 
-This is a work in progress. I wanted to build my own React boilerplate to use for future freeCodeCamp projects.
+This is a markdown previewer built using React. This version is near complete, more details to come soon.
