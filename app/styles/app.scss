@@ -3,4 +3,39 @@
 // Components
 body {
   font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  background-color: #bad8d8;
+}
+
+#headline {
+  text-align: center;
+}
+
+#editor {
+
+}
+
+#preview {
+  border: 2px solid black;
+  padding-left: 20px;
+  width: 90%;
+  background-color: #fff;
+}
+
+#footer {
+  text-align: center;
+}
+
+textarea {
+  width: 90%;
+  height: 500px;
+}
+
+h5 {
+  font-size: 10pt;
+}
+
+a {
+  color: #558F8F;
+  text-decoration: none;
 }
