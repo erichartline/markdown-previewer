@@ -1,9 +1,9 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const marked = require('marked');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import marked from 'marked';
 import { Grid, Row, Col } from 'react-flexbox-grid';
+import './styles/app.css';
 
-import './styles/app.scss';
 
 class Markdown extends React.Component {
   constructor(props) {
@@ -32,21 +32,21 @@ class Markdown extends React.Component {
             <h1 id="headline">React Markdown Previewer</h1>
             </Col>
           </Row>
-        <Row>
-          <Col xs={6}>
-            <textarea id="editor" value={this.state.markdown} onChange={this.handleChange}></textarea>
-            <h5><a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">What is Markdown?</a>&nbsp;<span><i className="fa fa-external-link" aria-hidden="true"></i></span></h5>
-          </Col>
-          <Col xs={6}>
-            <div id="preview" dangerouslySetInnerHTML={this.rawMarkup()}></div>
-          </Col>
-        </Row><br />
-        <Row>
-          <Col xs={12} id="footer">
-          <p>Written and coded by <a href="http://www.erichartline.net" target="_blank">Eric Hartline</a> for <a href="http://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> <i className="fa fa-free-code-camp" aria-hidden="true">.</i></p>
-          </Col>
-        </Row>
-      </Grid>
+          <Row>
+            <Col xs={6}>
+              <textarea id="editor" value={this.state.markdown} onChange={this.handleChange}></textarea>
+              <h5><a href="https://en.wikipedia.org/wiki/Markdown" rel="noopener noreferrer" target="_blank">What is Markdown?</a>&nbsp;<span><i className="fa fa-external-link" aria-hidden="true"></i></span></h5>
+            </Col>
+            <Col xs={6}>
+              <div id="preview" dangerouslySetInnerHTML={this.rawMarkup()}></div>
+            </Col>
+          </Row><br />
+          <Row>
+            <Col xs={12} id="footer">
+            <p>Written and coded by <a href="http://www.erichartline.net" rel="noopener noreferrer" target="_blank">Eric Hartline</a> for <a href="http://www.freecodecamp.org/" rel="noopener noreferrer" target="_blank">freeCodeCamp</a> <i className="fa fa-free-code-camp" aria-hidden="true">.</i></p>
+            </Col>
+          </Row>
+        </Grid>
     )
   }
 }
