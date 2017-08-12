@@ -11,7 +11,6 @@ module.exports = {
 	},
 	resolve: {
 		alias: {
-
 		},
 		extensions: ['*', '.js', '.jsx']
 	},
