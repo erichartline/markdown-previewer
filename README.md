@@ -2,7 +2,7 @@
 
 This is a Markdown previewer built using React.
 
-Live Demo: [https://powerful-headland-23241.herokuapp.com/](https://powerful-headland-23241.herokuapp.com/)
+Live Demo: [http://markdown-previewer-fcc.surge.sh/](http://markdown-previewer-fcc.surge.sh/)
 
 Features:
 * User can type in text area and immediately see content converted into Markdown
